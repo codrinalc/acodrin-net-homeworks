@@ -53,3 +53,73 @@ Pseudocode
 255 - 1x200 1x50 1x5
 330 - 1x200 1x100 1x20 1x10
 999 - 1x500 2x200 1x50 2x20 1x5 4x1
+
+
+
+
+c#
+
+
+
+          /*  Console.WriteLine("EXERCITIU 1");
+
+              Console.WriteLine("Introdu numarul 1: ");
+              int x = int.Parse(Console.ReadLine());
+              Console.WriteLine("Introdu numarul 2: ");
+              int y = int.Parse(Console.ReadLine());
+
+              Console.WriteLine(x + y);
+              Console.WriteLine(x - y);
+              Console.WriteLine(x / y);
+              Console.WriteLine(x * y);
+
+              Console.WriteLine("Introdu numarul 1: ");
+              double a = double.Parse(Console.ReadLine());
+              Console.WriteLine("Introdu numarul 2: ");
+              int b = int.Parse(Console.ReadLine());
+
+              Console.WriteLine(a + b);
+              Console.WriteLine(a - b);
+              Console.WriteLine(a / b);
+              Console.WriteLine(a * b);
+
+              */
+
+            /* Console.WriteLine("EXERCITIU 2");
+
+             int r = int.Parse(Console.ReadLine());
+             int p = int.Parse(Console.ReadLine());
+             int o = int.Parse(Console.ReadLine());
+
+             if (r > p && p < o)
+
+             {
+                 Console.WriteLine("Cel mai mic numar este:" + p);
+                 Console.WriteLine("Cel mai mare numar este:" + r);
+
+             }
+      */
+
+            Console.WriteLine("EXERCITIU 3");
+            Console.WriteLine("Introdu numarul de zile");
+            int days = int.Parse(Console.ReadLine());
+            int year = 365;
+            int days1 = 31;
+            int month = 12;
+            int rest = days / month;
+
+
+
+            if (days > year )
+
+            {
+
+                Console.WriteLine("Years:" + days / year);
+
+              
+            }
+
+            if (days > days1) 
+            {
+                Console.WriteLine(rest);
+            }
