@@ -1,2 +1,30 @@
 Ailincai Codrin Madalin
 Am reusit
+
+     Console.WriteLine("Exercitiu 1");
+
+            int[,] myArray1 = new int[,] { { 123, 345, 567 }, { 12, 56, -12, },{ 34, -98, 65 },{ 765, 543, 321 } };
+            Console.WriteLine(myArray1[1,1]);
+            Console.WriteLine(myArray1[2,1]);
+
+            Console.WriteLine("Exercitiu 2");
+
+            List<string> l5 = new List<string> { };
+            Console.WriteLine("introduceti 3 nume");
+
+            string input1 = Console.ReadLine();
+            l5.Add(input1);
+            string input2 = Console.ReadLine();
+            l5.Add(input2);
+            string input3 = Console.ReadLine();
+            l5.Add(input3);
+
+            if (l5.Contains("ana"))
+            {
+                Console.WriteLine("lista contine deja numele ana");
+            }
+            else
+            {
+                Console.WriteLine("ultimul nume introdus este:"+ input3+ "\n");    
+            }
+*/
