@@ -1,73 +1,44 @@
 Ailincai Codrin Madalin
-Am reusit
-
-     Console.WriteLine("Exercitiu 1");
-
-            Console.WriteLine("Exercitiu 1");
-
-            int[,] myArray1 = new int[,] { { 123, 345, 567 }, { 12, 56, -12, },{ 34, -98, 65 },{ 765, 543, 321 } };
-            Console.WriteLine(myArray1[1,1]);
-            Console.WriteLine(myArray1[2,1]);
-
-            Console.WriteLine("Exercitiu 2");
-
-            List<string> l5 = new List<string> { };
-            Console.WriteLine("introduceti 3 nume");
-
-            string input1 = Console.ReadLine();
-            l5.Add(input1);
-            string input2 = Console.ReadLine();
-            l5.Add(input2);
-            string input3 = Console.ReadLine();
-            l5.Add(input3);
-
-            if (l5.Contains("ana"))
+int[] array= new int[] {1,2,3,4,5};
+           foreach ( int element in array )
             {
-                Console.WriteLine("lista contine deja numele ana");
-            }
-            else
-            {
-                Console.WriteLine("ultimul nume introdus este:"+ input3+ "\n");    
-            }
+                if (element % 2 == 0)
+                {
+                    Console.WriteLine(element);
+                    
 
-            Stack<int> s1 = new Stack<int>();
-            int input4 = Convert.ToInt32(Console.ReadLine());
-            int input5 = Convert.ToInt32(Console.ReadLine());
-            s1.Push(input4);
-            s1.Push(input5);
-            if (s1.ElementAt(0) <= 30 || s1.ElementAt(1) <= 30)
-            {
-                Console.WriteLine("true");
-            }
-            if (s1.ElementAt(0) + s1.ElementAt(1) == 30)
-            {
-                Console.WriteLine("true");
+                }
+                
+                
             }
 
 
-            else
+            int[] myArray = new int[] { 2, 5, 6, 7, 7, 8, 4, 3, 1, 2 };
+            for (var i = 0; i < myArray.Length-1; i++)
             {
-                Console.WriteLine("false");
+                for (var j = 0; j < myArray.Length-1; j++)
+                {
+                    if (myArray[i] == myArray[j])
+                    {
+                        
+                        
+                            Console.WriteLine(i); 
+                        
+                    }
+                }
             }
-
-            Queue<int> q= new Queue<int>();
-            int input6 = Convert.ToInt32(Console.ReadLine()); 
-            int input7 = Convert.ToInt32(Console.ReadLine());
-            int input8= Convert.ToInt32(Console.ReadLine());
-            int input9= Convert.ToInt32(Console.ReadLine());
-            int input10= Convert.ToInt32(Console.ReadLine());
-            q.Enqueue(input6);
-            q.Enqueue(input7);
-            q.Enqueue(input8);
-            q.Enqueue(input9);
-            q.Enqueue(input10);
-            if (q.ElementAt(0) >= 0 && q.ElementAt(0) % 3 == 0 && q.ElementAt(0) % 7 == 0)
+            string[] myList2 = new string[] { "a", "b", "b", "c", "d", "d" };
+            for (var i = 0; i < myList2.Length - 1; i++)
             {
-                Console.WriteLine("Numarul este ok");
-            }
-            else
-            {
-                q.Dequeue();
-                Console.WriteLine(q.ElementAt(0));
+                for (var j = 0; j < myList2.Length - 1; j++)
+                {
+                    if (myList2[i] == myList2[j])
+                    {
+                        int indexToRemove = j;
+                        int indexToRemove1 = i;
 
+                        myList2.(indexToRemove);
+
+                    }
+                }
             }
